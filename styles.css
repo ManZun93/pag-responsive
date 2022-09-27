@@ -1,0 +1,395 @@
+:root {
+  --main-color: #414641;
+  --secondary-color : #4c514c;
+  --alt-color: #7a8a80;
+  --background-color: #f4f6f3;
+  --background-alt: #9ab5a45c
+
+
+
+}
+
+/*utilidades*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+
+body {
+ 
+font-family: 'Reem Kufi Fun', sans-serif;
+
+}
+
+
+
+
+h1{
+  color: var(--main-color);
+  font-size: 78px;
+  font-weight: 400;
+  letter-spacing: 10px;
+
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+    
+    
+  }
+  
+}
+
+header {
+  margin: 20px;
+  width: calc(100% - 40px); /* hace un calculo donde ordena quitar 40px acumulados del margin */
+  height: calc(100vh - 40px);
+  background-image: url("https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658");
+  background-size: cover;
+  background-position: right center;
+}
+
+@media (max-width: 480px){ /*media query*/
+  header {
+  margin: 10px;
+  width: calc(100% - 20px); /* hace un calculo donde ordena quitar 40px acumulados del margin */
+  height: calc(100vh - 20px);
+  background-position: right center;
+  }
+  
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header p {
+  color: var(--secondary-color);
+  font-size: 24px;
+  
+}
+
+.underline {
+  width: 5%;
+  height: 7px;
+  background-color: var(--alt-color);
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--main-color);
+  
+  
+
+}
+
+.desktop-menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+}
+
+@media (max-width: 480px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+
+.lo {
+  font-size: 25px;
+}
+ .nav-small {
+  font-size: 15px;
+ }
+
+ .nav-small a {
+  margin-left: 15px;
+ }
+
+ .btn {
+  border: 2px solid var(--secondary-color);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+ }
+ .btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+ }
+
+ /*section articles*/
+
+main {
+  background-color: var(--background-color);
+  padding: 120px 0;
+}
+
+@media (max-width: 480px) {
+  .main {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+  main div:first-child { /* seleccionar el primer hijo*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  article {
+    width: 100%;
+    height: 100%px;
+    background-color: #fff;
+    box-shadow: 10px 5px 24px 1px rgba(0,0,0,0.68)
+  }
+
+  
+ 
+
+
+  .article-image {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .article-image img {
+    width: 200%;
+    
+
+  }
+
+  
+  @media (max-width: 480px) {
+    .article-image img {
+      
+      width: 100%; 
+      
+    }
+  }
+
+
+  .article-content {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .article-content {
+      
+      padding: 50px 0;
+      
+      
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    width: 90%;
+    gap: 60px;
+    margin: 60px auto 0 auto;
+    padding-bottom: 40px;
+    
+  }
+
+  @media (max-width: 480px) {
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      
+    }
+  }
+
+
+ /* about section*/
+
+ .about-section {
+  display: flex;
+  
+ }
+
+ @media (max-width: 480px) {
+  .about-section {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+  }
+}
+
+ .about-section > div {
+  width: 50%;
+  margin-top: 140px;
+  background-color: white;
+   
+ }
+
+ @media (max-width: 480px) {
+  .about-section > div {
+    
+   width: 63%;
+   margin-top: 0
+   
+    
+  }}
+
+
+ .about-image{
+  width: 50%;
+  padding: 80px;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w);
+  background-size: cover;
+  background-position: center bottom;
+ }
+
+ @media (max-width: 480px) {
+  .about-image {
+    
+
+  background-position: center;
+ 
+    
+  }}
+ 
+ 
+
+ .about-content {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+
+ }
+
+
+ @media (max-width: 480px) {
+  .about-content {
+    
+  
+   padding-top: 0;
+   
+    
+  }}
+
+ /* final-about section*/
+
+ .final-section {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px; 
+  color: var(--secondary-color);
+  background-color: var(--background-alt)
+ }
+
+ @media (max-width: 480px) {
+  .final-section {
+    
+  
+ 
+   gap: 5px;
+    
+  }}
+
+
+
+
+ 
+
+
+  
+.email {
+ width: 20%;
+ height: 40px;
+ overflow: hidden;
+  
+
+}
+
+@media (max-width: 480px) {
+  .email {
+    
+  
+ width: 140%;
+ 
+
+ 
+    
+  }}
+
+.email input{
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  border: rgb(209, 206, 206) 10px;
+ 
+
+}
+
+
+
+
+
+  
+
+
+
+ .submit-btn {
+  margin-top: 14px;
+  padding: 8px 20px;
+  border: var(--main-color) solid 2px;
+  background-color:#f4f6f300
+  
+
+ }
+ 
+ @media (max-width: 480px) {
+  .submit-btn {
+    
+  
+ width: 140%;
+ 
+ overflow: hidden;
+    
+  }}
+
