@@ -1,2 +1,2 @@
 # pag-responsive
-https://responsivemanuel.netlify.app/
+https://maquetamanuel.netlify.app/
