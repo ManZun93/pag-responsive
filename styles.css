@@ -331,6 +331,9 @@ main {
     
   }}
 
+.final-section h2, .final-section p {
+  margin: 0;
+}
 
 
 
